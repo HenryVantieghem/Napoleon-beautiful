@@ -1,49 +1,11 @@
 {
   "mcpServers": {
     "github": {
-      "type": "stdio",
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-github"],
       "env": {
         "GITHUB_TOKEN": "${GITHUB_TOKEN}"
       }
-    },
-    "supabase": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@supabase/mcp-server-supabase@latest", "--project-ref=your-project-ref"],
-      "env": {
-        "SUPABASE_ACCESS_TOKEN": "sbp_5eb3b36215e34b40d4f3be69ab19f46df0e72a05"
-      }
-    },
-    "vercel": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@vercel/mcp-server"],
-      "env": {
-        "VERCEL_TOKEN": "DLCfphXUqzJ8RF353K7t58z5"
-      }
-    },
-    "filesystem": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
-    },
-    "memory": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-memory"]
-    },
-    "puppeteer": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
-    }
-  },
-  "globalShortcuts": {
-    "mcp": {
-      "key": "cmd+shift+m",
-      "action": "show_mcp_status"
     }
   }
 }

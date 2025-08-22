@@ -1,6 +1,8 @@
 import { Metadata } from 'next'
 import Header from '@/components/layout/header'
-import SimplifiedHero from '@/components/sections/simplified-hero'
+import V0HeroContent from '@/components/sections/v0-hero-content'
+import V0PulsingCircle from '@/components/ui/v0-pulsing-circle'
+import V0ShaderBackground from '@/components/ui/v0-shader-background'
 import { ErrorBoundary } from '@/components/ui/error-boundary'
 
 export const metadata: Metadata = {
@@ -16,10 +18,11 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <ErrorBoundary>
-      <div className="min-h-screen bg-gradient-to-br from-black via-purple-900 to-black">
+      <V0ShaderBackground>
         <Header />
-        <SimplifiedHero />
-      </div>
+        <V0HeroContent />
+        <V0PulsingCircle />
+      </V0ShaderBackground>
     </ErrorBoundary>
   )
 }

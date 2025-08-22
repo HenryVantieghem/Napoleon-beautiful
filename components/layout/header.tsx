@@ -49,8 +49,8 @@ export default function Header({ className = "", onEarlyAccessClick }: HeaderPro
   return (
     <motion.header 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-executive-black/80 backdrop-blur-xl border-b border-white/10" : "bg-transparent",
+        "fixed top-0 left-0 right-0 z-40 transition-all duration-300",
+        isScrolled ? "bg-black/20 backdrop-blur-sm" : "bg-transparent",
         className
       )}
       initial={{ y: -100, opacity: 0 }}
