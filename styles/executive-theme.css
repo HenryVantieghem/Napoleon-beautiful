@@ -1,0 +1,454 @@
+/* Executive Precision Design System - Fortune 500 Grade Styling */
+
+:root {
+  /* Executive Authority & Power */
+  --executive-black: #000000;
+  --charcoal-depth: #1a1a1a;
+  --dark-surface: #0f0f0f;
+  --dark-elevated: #262626;
+  
+  /* Innovation & Premium Positioning */
+  --royal-purple: #8b5cf6;
+  --deep-purple: #4c1d95;
+  --purple-glow: #a855f7;
+  --purple-light: #c084fc;
+  --purple-subtle: rgba(139, 92, 246, 0.1);
+  
+  /* Trust & Enterprise Reliability */
+  --navy-trust: #1e1b4b;
+  --electric-blue: #3b82f6;
+  --sky-accent: #0ea5e9;
+  --blue-light: #60a5fa;
+  --blue-subtle: rgba(59, 130, 246, 0.1);
+  
+  /* Success & ROI Indicators */
+  --emerald-success: #10b981;
+  --green-growth: #059669;
+  --green-light: #34d399;
+  --green-subtle: rgba(16, 185, 129, 0.1);
+  
+  /* Urgency & Action Triggers */
+  --amber-urgency: #f59e0b;
+  --orange-cta: #ea580c;
+  --yellow-accent: #fbbf24;
+  --amber-subtle: rgba(245, 158, 11, 0.1);
+  
+  /* Luxury & Sophistication */
+  --gold-premium: #fbbf24;
+  --silver-elegant: #e5e7eb;
+  --platinum: #f8fafc;
+  --white-pure: #ffffff;
+  
+  /* Executive Grayscale */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  
+  /* Executive Opacity Layers */
+  --white-5: rgba(255, 255, 255, 0.05);
+  --white-10: rgba(255, 255, 255, 0.10);
+  --white-20: rgba(255, 255, 255, 0.20);
+  --white-30: rgba(255, 255, 255, 0.30);
+  --white-40: rgba(255, 255, 255, 0.40);
+  --white-50: rgba(255, 255, 255, 0.50);
+  --white-60: rgba(255, 255, 255, 0.60);
+  --white-70: rgba(255, 255, 255, 0.70);
+  --white-80: rgba(255, 255, 255, 0.80);
+  --white-90: rgba(255, 255, 255, 0.90);
+  
+  /* Executive Spacing (Golden Ratio: 1.618) */
+  --space-xs: 0.25rem;    /* 4px */
+  --space-sm: 0.5rem;     /* 8px */
+  --space-md: 0.75rem;    /* 12px */
+  --space-lg: 1rem;       /* 16px */
+  --space-xl: 1.618rem;   /* ~26px */
+  --space-2xl: 2.618rem;  /* ~42px */
+  --space-3xl: 4.236rem;  /* ~68px */
+  --space-4xl: 6.854rem;  /* ~110px */
+  --space-5xl: 11.09rem;  /* ~178px */
+  
+  /* Executive Border Radius */
+  --radius-sm: 0.375rem;  /* 6px */
+  --radius-md: 0.5rem;    /* 8px */
+  --radius-lg: 0.75rem;   /* 12px */
+  --radius-xl: 1rem;      /* 16px */
+  --radius-2xl: 1.5rem;   /* 24px */
+  --radius-full: 9999px;
+  
+  /* Executive Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-premium: 0 32px 64px rgba(139, 92, 246, 0.15), 0 16px 32px rgba(59, 130, 246, 0.1);
+  --shadow-executive: 0 40px 80px rgba(0, 0, 0, 0.12), 0 20px 40px rgba(139, 92, 246, 0.08);
+  
+  /* Executive Typography Scale */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+  --text-6xl: 3.75rem;    /* 60px */
+  --text-7xl: 4.5rem;     /* 72px */
+  --text-8xl: 6rem;       /* 96px */
+  --text-9xl: 8rem;       /* 128px */
+  
+  /* Executive Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+  
+  /* Executive Letter Spacing */
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+  
+  /* Executive Animation Durations */
+  --duration-75: 75ms;
+  --duration-100: 100ms;
+  --duration-150: 150ms;
+  --duration-200: 200ms;
+  --duration-300: 300ms;
+  --duration-500: 500ms;
+  --duration-700: 700ms;
+  --duration-1000: 1000ms;
+  
+  /* Executive Animation Easings */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-executive: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-premium: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  /* Executive Gradients */
+  --gradient-purple: linear-gradient(135deg, var(--royal-purple) 0%, var(--deep-purple) 100%);
+  --gradient-blue: linear-gradient(135deg, var(--electric-blue) 0%, var(--navy-trust) 100%);
+  --gradient-success: linear-gradient(135deg, var(--emerald-success) 0%, var(--green-growth) 100%);
+  --gradient-premium: linear-gradient(135deg, var(--royal-purple) 0%, var(--electric-blue) 50%, var(--emerald-success) 100%);
+  --gradient-executive: linear-gradient(135deg, var(--executive-black) 0%, var(--deep-purple) 50%, var(--navy-trust) 100%);
+  
+  /* Executive Background Patterns */
+  --pattern-dots: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  --pattern-grid: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* Executive Base Styles */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-feature-settings: 'cv01', 'cv02', 'cv03', 'cv04', 'cv11';
+  background-color: var(--executive-black);
+  color: var(--white-pure);
+  line-height: var(--leading-normal);
+  font-size: var(--text-base);
+  overflow-x: hidden;
+}
+
+/* Executive Typography Classes */
+.headline-hero {
+  font-family: 'Inter', 'SF Pro Display', system-ui, sans-serif;
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-none);
+  text-rendering: optimizeLegibility;
+  background: var(--gradient-premium);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headline-section {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 600;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+  color: var(--white-pure);
+}
+
+.executive-copy {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  line-height: var(--leading-relaxed);
+  font-weight: 400;
+  letter-spacing: var(--tracking-normal);
+  color: var(--white-80);
+}
+
+.cta-primary {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  letter-spacing: var(--tracking-normal);
+  text-transform: none;
+  color: var(--white-pure);
+}
+
+.credibility-text {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--white-60);
+}
+
+/* Executive Component Styles */
+.executive-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-xl);
+  font-weight: 600;
+  transition: all var(--duration-300) var(--ease-executive);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.executive-button:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: var(--gradient-premium);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  opacity: 0;
+  transition: opacity var(--duration-300) var(--ease-executive);
+}
+
+.executive-button:hover:before {
+  opacity: 1;
+}
+
+.executive-button--primary {
+  background: var(--gradient-purple);
+  color: var(--white-pure);
+  box-shadow: var(--shadow-premium);
+  padding: var(--space-lg) var(--space-2xl);
+  font-size: var(--text-lg);
+}
+
+.executive-button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-executive);
+}
+
+.executive-button--outline {
+  background: transparent;
+  color: var(--white-pure);
+  border: 1px solid var(--white-20);
+  backdrop-filter: blur(12px);
+  padding: var(--space-lg) var(--space-2xl);
+  font-size: var(--text-lg);
+}
+
+.executive-button--outline:hover {
+  background: var(--white-5);
+  border-color: var(--white-30);
+  transform: translateY(-1px);
+}
+
+.executive-card {
+  background: var(--white-5);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--white-10);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-2xl);
+  transition: all var(--duration-300) var(--ease-executive);
+}
+
+.executive-card:hover {
+  background: var(--white-10);
+  border-color: var(--white-20);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-executive);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glassmorphism-strong {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(40px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Executive Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.6), 0 0 60px rgba(59, 130, 246, 0.3); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+/* Executive Responsive Utilities */
+.container-executive {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+@media (min-width: 640px) {
+  .container-executive {
+    padding: 0 var(--space-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-executive {
+    padding: 0 var(--space-2xl);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-executive {
+    padding: 0 var(--space-3xl);
+  }
+}
+
+/* Executive Focus States */
+.focus-executive:focus {
+  outline: 2px solid var(--royal-purple);
+  outline-offset: 2px;
+}
+
+.focus-executive:focus-visible {
+  outline: 2px solid var(--royal-purple);
+  outline-offset: 2px;
+}
+
+/* Executive Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--charcoal-depth);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--royal-purple);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--purple-glow);
+}
+
+/* Executive Selection */
+::selection {
+  background: var(--royal-purple);
+  color: var(--white-pure);
+}
+
+::-moz-selection {
+  background: var(--royal-purple);
+  color: var(--white-pure);
+}
+
+/* Executive Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
+
+/* Executive Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .executive-button--primary {
+    border: 2px solid var(--white-pure);
+  }
+  
+  .executive-card {
+    border: 2px solid var(--white-40);
+  }
+}
